@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+
+/* 전체 여백을 좀 더 줄였음 */
+#main .inner {width: calc(100% * ((1303 / 1903)));}
+#main .sec1 {margin-bottom: 1200px;}
+#main .sec1 .inner > h1 {padding-top: 220px; text-align: center;}
+#main .sec1 .inner > h3 {padding-bottom: 150px; font-weight: 100; text-align: center; text-transform: none;}
+
+/* 코일이미지 전체너비 */
+#main .sec1 .inner .coil {
+    width: 100%; height: 630px;
+    position: relative;
+   
+}
+#main .sec1 .inner .coil > h1 {text-align: center;}
+
+/* 코일이미지들 */
+#main .sec1 .inner .coil_img {
+    display: flex; 
+    justify-content: center; 
+    position: relative;
+}
+
+#main .sec1 .inner .coil_img .img1 {
+    z-index: 4;
+    position: absolute; 
+    left: 50%; top: 50%;
+    transform: translate(-50%,0);  
+    
+    width: 1000px; height: 500px; 
+    background:url('../img/main/coil_out.png')no-repeat center;
+
+    transition: opacity 0.5s;
+}
+#main .sec1 .inner .coil_img .img2 {
+    z-index: 3;
+    position: absolute; 
+    left: 50%; top: 50%;
+    transform: translate(-50%,0);
+    
+    width: 1000px; height: 500px; 
+    background:url('../img/main/coil_in.png')no-repeat center;
+    transition: opacity 0.5s;
+}
+#main .sec1 .inner .coil_img .img3 {
+    z-index: 2;
+    position: absolute; 
+    left: 50%; top: 50%;
+    transform: translate(-50%,0);
+    
+    width: 1000px; height: 500px; 
+    background: url('../img/main/coil_sid.png')no-repeat center;
+    transition: opacity 0.5s;
+}
+#main .sec1 .inner .coil_img .img_bg {
+    z-index: 1;
+    position: absolute; 
+    left: 50%; top: 50%;
+    transform: translate(-50%,0);
+    
+    width: 1000px; height: 500px; 
+    background: url('../img/main/coil_bg.png')no-repeat center;
+}
+
+
+/* 버튼 */
+#main .sec1 .inner .coil_btn {
+    position: absolute; 
+    left: 0; bottom: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+#main .sec1 .inner .coil_btn .btn {
+    cursor: pointer; 
+
+    padding: 20px 70px;
+    display: block;
+    background: #F7F8FA;
+    border-radius: 20px;
+
+    transition: background 0.5s;
+}
+
+#main .sec1 .inner .coil_btn .btn:hover {background: #0070FF;color: #fff;}
+
+
+
+
+
+
+/* 제품 구매 옵션 */
+#main .sec1 .inner .coil .product {margin-top: 700px;}
+/* 구매 박스 */
+#main .sec1 .inner .pd_option {
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+    
+    margin: 50px auto 0;
+    width: 1000px;
+    padding-bottom: 50px;
+    background: #F7F8FA; 
+    border-radius: 20px;
+    
+}
+
+
+
+/* 제품이미지 */
+#main .sec1 .inner .pd_option .out_img {
+    width:400px ; height: 400px; 
+    background: url('../img/main/out_pd.png')no-repeat center;
+    margin-top:90px;
+}
+#main .sec1 .inner .pd_option .in_img {
+    width:400px ; height: 400px; 
+    background: url('../img/main/in_pd.png')no-repeat center;
+    margin-top:90px;
+}
+
+#main .sec1 .inner .pd_option .sid_img {
+    width:400px ; height: 400px; 
+    background: url('../img/main/sid_pd.png')no-repeat center;
+    margin-top:90px;
+}
+
+
+#main .sec1 .inner .pd_option .img p {margin-top: 10px;}
+
+
+/* 제품 박스 */
+#main .sec1 .inner .pd_option .pd_txt {width: 400px; margin-top:80px;}
+
+/* 제품 설명 */
+#main .sec1 .inner .pd_option .pd_txt > .kr_p2 {margin-top: 10px;}
+#main .sec1 .inner .pd_option .pd_txt > .kr_p2 span {font-size: 1.8rem; text-transform: lowercase;}
+
+
+/* 옵션 박스*/
+#main .sec1 .inner .pd_option .pd_txt .opt {margin-top: 20px; border-top: 1px solid rgba(0, 0, 0, 0.6);}
+#main .sec1 .inner .pd_option .pd_txt .opt > h3 {padding-top: 15px;}
+
+/* 옵션 선택 박스*/
+#main .sec1 .inner .pd_option .pd_txt .opt form {margin: 5px 0; position: relative;}
+#main .sec1 .inner .pd_option .pd_txt .opt form > div {display: flex; margin: 10px 0;}
+
+/* 옵션 */
+#main .sec1 .inner .pd_option .pd_txt .opt form p {margin-right: 10px;}
+#main .sec1 .inner .pd_option .pd_txt .opt form select {display: block; width: 330px; font-size: 1.6rem; border-radius: 5px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);}
+
+
+
+/* 가격 */
+#main .sec1 .inner .pd_option .pd_txt .opt form .price { display: block; width: 100%; color: #0070FF;}
+#main .sec1 .inner .pd_option .pd_txt .opt form .price p { text-align: right;}
+#main .sec1 .inner .pd_option .pd_txt .opt form .price span { font-size: 3rem;}
+
+
+/* 구매버튼 */
+#main .sec1 .inner .pd_option .pd_txt .opt form label {position: relative;}
+
+/* 제출(input-submit) 버튼 기본 폼 화면밖으로 날렸음 */
+#main .sec1 .inner .pd_option .pd_txt .opt form input {position: absolute; left: -999em;}
+
+
+/* 견적&주문 버튼 간격 */
+#main .sec1 .inner .pd_option .pd_txt .opt form > div:last-child {justify-content: center; gap: 20px;}
+
+
+/* 새로만든 견적서버튼 */
+#main .sec1 .inner .pd_option .pd_txt .opt form .box1 {
+    cursor: pointer;
+    margin-top: 20px;
+
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 10px 30px; 
+    width: 180px;
+    
+    color:rgba(0,0,0,0.3);
+    text-align: center;
+    font-weight: 500;
+    
+    transition: background 0.5s;
+}
+
+#main .sec1 .inner .pd_option .pd_txt .opt form .box1:hover {
+    background: #333;
+    color: #fff;
+}
+
+
+/* 새로만든 주문버튼 */
+#main .sec1 .inner .pd_option .pd_txt .opt form .box2 {
+    position: relative;
+
+    display: flex;
+    margin-top: 20px;
+
+    border: 2px solid #0070FF;
+    border-radius: 10px;
+    padding: 10px 30px; 
+    width: 200px;
+    
+    color: #0070FF;
+    font-weight: 500;
+
+    transition: background 0.5s;
+}
+
+/* 주문버튼 화살표 + 동작 */
+#main .sec1 .inner .pd_option .pd_txt .opt form .box2 .line {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block; 
+    width: 40px; height: 2px; 
+    background: #0070FF;
+
+    transition: right 0.5s;
+}
+#main .sec1 .inner .pd_option .pd_txt .opt form .box2 .arrow{
+    position: absolute;
+    right: 30px;
+    top:23px;
+
+    display: block; 
+    width: 10px; height: 10px;
+    border-top:2px solid #0070FF;
+    border-right:2px solid #0070FF;
+    transform: rotate(45deg);
+
+    transition: right 0.5s;
+}
+#main .sec1 .inner .pd_option .pd_txt .opt form .box2:hover {
+    color: #fff;
+    background: #0070FF;
+}
+#main .sec1 .inner .pd_option .pd_txt .opt form .box2:hover .line {
+    right: 20px;
+    background: #fff;
+}
+#main .sec1 .inner .pd_option .pd_txt .opt form .box2:hover .arrow {
+    right: 20px;
+    border-top:2px solid #fff;
+    border-right:2px solid #fff;
+}
+
+
+#main .sec1 .sec_txt {color: #333; margin-top: 150px;}
