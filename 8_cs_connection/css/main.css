@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+#main {
+    background: #fff;
+    padding-bottom: 300px;
+    /* 예시 */
+}
+.inner
+{
+    width: calc(100% * ((1403 / 1903)));
+}
+#header .inner,
+#footer .inner
+{
+    width: calc(100% * ((1703 / 1903)));
+
+}
+
+/* sec_1 */
+#sec_1 h1 {
+    text-align: center;
+    padding-top: 250px;
+}
+
+/* search */
+.search {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+}
+
+.search div {
+    display: inline-block;
+    border-radius: 50px;
+    background: #eee;
+    overflow: hidden;
+    width: 30%;
+    min-width: 250px;
+}
+
+.search input[type="text"] {
+    margin-left: 20px;
+    text-align: center;
+    background: #eee;
+    width: 400px;
+    height: 50px;
+    font-size: 1.6rem;
+    padding: 0 20px;
+}
+
+.search input[type="submit"] {
+    background: url('../img/search_btn.png') no-repeat center center;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+/* sec_2 */
+#sec_2 {
+    padding-top: 250px;
+}
+
+#sec_2 .inner {
+    width: calc(100% * ((800 / 1903)));
+}
+
+/* 더보기 */
+#sec_2 .plus {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#sec_2 .plus a {
+    padding-bottom: 10px;
+    color: #000;
+    display: block flex;
+    font-family: Noto Sans KR;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+}
+
+#sec_2 .plus a span {
+    display: flex;
+    align-items: center;
+}
+
+#sec_2 .plus a .icon {
+    display: flex;
+    margin-left: 15px;
+}
+
+
+#sec_2 .plus a .icon svg {
+    transition: all 1s;
+    cursor: pointer;
+}
+
+#sec_2 .plus a .icon svg:hover {
+    transform: rotate(180deg);
+}
+
+
+#sec_2 .plus a .icon svg:hover .more_btn_box {
+    fill: #2687E0;
+    ;
+    stroke: #fff;
+    ;
+}
+
+#sec_2 .plus a .icon svg:hover .more_btn {
+    fill: #fff;
+
+}
+
+/* qna */
+#sec_2 .qna {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#sec_2 .qna .q {
+    cursor: pointer;
+    padding: 18px 80px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: #000;
+    font-family: Noto Sans KR;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.44px;
+    text-transform: uppercase;
+}
+
+
+#sec_2 .qna .a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background: #F9F9F9;
+    padding: 40px 0 30px 158px
+}
+
+#sec_2 .qna .a span {
+    text-transform: lowercase;
+}
+
+/* #sec_2 .qna .a {
+    color: #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: Noto Sans KR;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    letter-spacing: -1.28px;
+    text-transform: uppercase;
+    background: #F9F9F9;
+    padding: 40px 0 30px 158px
+} */
+
+/* sec_3 */
+#sec_3 {
+    padding-top: 113px;
+}
+
+#sec_3 .inner {
+    width: 100%;
+    background: #f9f9f9;
+    padding-bottom: 113px;
+}
+
+#sec_3 h2 {
+    padding: 51px 0 78px 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2687E0;
+    font-family: SF Pro;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 860;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/* question */
+
+#sec_3 dl dt {
+    padding: 224px 0 20px 0;
+    color: #464646;
+    font-family: Noto Sans KR;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -2.56px;
+    text-transform: uppercase;
+    transition: all 0.5;
+}
+
+
+
+#sec_3 .question {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+#sec_3 .question .collabo {
+    cursor: pointer;
+
+    background: #fff url('../img/collabo_b.png')no-repeat center 25%;
+    width: 360px;
+    height: 420px;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+
+#sec_3 .question .collabo:hover {
+    background: #2687E0 url('../img/collabo_w.png')no-repeat center 25%;
+    transition: 0.5s;
+}
+
+#sec_3 .question dl:hover dt,
+#sec_3 .question dl:hover dd {
+    color: #fff;
+}
+
+#sec_3 .question .client {
+    cursor: pointer;
+
+    background: #fff url('../img/client_b.png')no-repeat center 25%;
+    width: 360px;
+    height: 420px;
+    flex-shrink: 0;
+    border-radius: 30px;
+}
+
+
+#sec_3 .question .client:hover {
+    background: #2687E0 url('../img/client_w.png')no-repeat center 25%;
+    transition: 0.5s;
+}
+
+
+/* #sec_3 .question .client > dl:hover {
+    background:#2687E0 url('../img/client_w.png')no-repeat center 25% ;
+    transition: 0.5s;
+} */
