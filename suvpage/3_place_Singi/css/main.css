@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+#sec_1 {
+    margin: 100px 0;
+
+}
+
+
+/* #sec_2 */
+#sec_2 .inner {
+    display: flex;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+#sec_2 img {
+    margin-bottom: 50px;
+}
+
+#sec_2 .inner .txt_1 .kr_h1 {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#sec_2 .inner .txt_1 .kr_h1::after {
+    content: '';
+    width: 260px;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    background: #0070FF;
+}
+
+#sec_2 .inner .txt_2 .address {
+    display: flex;
+    gap: 50px;
+}
+
+#sec_2 .inner .txt_2 .tel {
+    display: flex;
+    gap: 50px;
+}
+
+#sec_2 .inner .txt_2 .fax {
+    display: flex;
+    gap: 50px;
+}
+
+/* #sec_3 */
+#sec_3 .inner .flex_1 {
+    display: flex;
+    gap: 50px;
+    margin: 60px 0;
+}
+#sec_3 .inner p{display: inline-block;}
+#sec_3 .inner .kr_h2{margin-left: 20px;}
+#sec_3 .inner .kr_p2{margin-top: 50px;}
+/* sec_4 */
+#sec_4 .kr_h2 {
+    margin: 30px 0;
+}
+
+#sec_4 .obj {
+    display: flex;
+    gap: 150px;
+    margin: 50px 0 50px 0;
+}
+
+#sec_4 .obj li {
+    width: calc((100% - 150px) / 2);
+}
+
+#sec_4 .inner img {
+    height: 80%;
+    width: 100%;
+}
+
+#sec_4 .flex_2 {
+    display: flex;
+    gap: 20px;
+}
+
+#sec_4 .flex_2 .kr_h3 {
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+/* sec_5 */
+#sec_5 {
+    text-align: center;
+    margin: 150px 0;
+}
