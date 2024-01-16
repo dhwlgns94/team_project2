@@ -3,19 +3,22 @@ $(document).ready(function(){
 
 
 
-$(".tabs li:nth-child(1)").click(function(){
-  $(".flex_1").fadeIn();
-  $(".flex_2").fadeOut();
+    $(".howcome_tab > li:nth-child(1)").addClass("on");
+    $(".gang_box").addClass("on");
+
+    $(".howcome_tab > li").click(function(){
+        $(this).addClass("on").siblings().removeClass("on");
+    });
+
+    $(".tab_1").click(function(){
+        $(".gang_box").addClass("on").siblings().removeClass("on");
+    });
+    $(".tab_2").click(function(){
+        $(".singi_box").addClass("on").siblings().removeClass("on");
+    });
 
 
-});
-$(".tabs li:nth-child(2)").click(function(){
-  $(".flex_2").fadeIn();
-  $(".flex_1").fadeOut();
 
-});
-
-$(".flex_2").hide();
 // 문서준비이벤트종료
 });
 // 문서준비이벤트종료

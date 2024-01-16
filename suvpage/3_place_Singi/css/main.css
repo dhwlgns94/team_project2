@@ -1,15 +1,28 @@
 @charset "utf-8";
 
+#main .inner {
+    width: calc(100% * ((1403 / 1903)));
+}
+
+#header .inner,
+#footer .inner {
+    width: calc(100% * ((1703 / 1903)));
+
+}
+
 #sec_1 {
     margin: 100px 0;
-
 }
 
 
 /* #sec_2 */
+#sec_2 {
+    padding: 200px 0px;
+}
+
 #sec_2 .inner {
-    display: flex;
-    gap: 50px;
+    /* display: flex;
+    gap: 50px; */
     margin: 0 auto;
 }
 
@@ -32,31 +45,116 @@
     background: #0070FF;
 }
 
-#sec_2 .inner .txt_2 .address {
+#sec_2 .inner .flex_1 {
     display: flex;
-    gap: 50px;
 }
 
-#sec_2 .inner .txt_2 .tel {
-    display: flex;
-    gap: 50px;
+#sec_2 .inner .flex_1>div:nth-child(1) {
+    width: 25%;
 }
 
-#sec_2 .inner .txt_2 .fax {
-    display: flex;
-    gap: 50px;
+#sec_2 .inner .flex_1>div:nth-child(2) {
+    width: 75%;
 }
+
+#sec_2 .kr_p2 {
+    margin-left: 10px;
+}
+
+#sec_2 img {
+    width: 100%;
+}
+
+/* #sec_2 .inner .txt_2 .kr_h3{width: 48px;} */
 
 /* #sec_3 */
+
 #sec_3 .inner .flex_1 {
     display: flex;
-    gap: 50px;
-    margin: 60px 0;
+    gap: 100px;
+
 }
-#sec_3 .inner p{display: inline-block;}
-#sec_3 .inner .kr_h2{margin-left: 20px;}
-#sec_3 .inner .kr_p2{margin-top: 50px;}
+
+#sec_3 .inner .flex_1 p:nth-child(4) {
+    margin-left: 40px;
+}
+
+#sec_3 .inner p {
+    display: inline-block;
+}
+
+#sec_3 .inner .kr_p2 {
+    margin-top: 30px;
+}
+
 /* sec_4 */
+#sec_4
+{
+    padding:200px 0px;
+}
+
+#header
+{
+    z-index:9;
+        /* 코일이랑 뒤섞여서 올림 */
+
+}
+.depth2_bg
+{
+    z-index:8;
+    /* 코일이랑 뒤섞여서 올림 */
+
+}
+ .coil_img {
+    display: flex; 
+    justify-content: center; 
+    position: relative;
+    height:500px;
+}
+.coil_img .img1 {
+    z-index: 4;
+    position: absolute; 
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);  
+    
+    width: 1000px; height: 500px; 
+    background:url('../img/sec_4/coil_out.png')no-repeat center;
+
+    transition: opacity 0.5s;
+}
+.coil_img .img2 {
+    z-index: 3;
+    position: absolute; 
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);  
+    
+    width: 1000px; height: 500px; 
+    background:url('../img/sec_4/coil_in.png')no-repeat center;
+    transition: opacity 0.5s;
+}
+.coil_img .img3 {
+    z-index: 2;
+    position: absolute; 
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);  
+    
+    width: 1000px; height: 500px; 
+    background: url('../img/sec_4/coil_sid.png')no-repeat center;
+    transition: opacity 0.5s;
+}
+.coil_img .img_bg {
+    z-index: 1;
+    position: absolute; 
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);  
+    
+    width: 1000px; height: 500px; 
+    background: url('../img/sec_4/coil_bg.png')no-repeat center;
+}
+
+
+
+
 #sec_4 .kr_h2 {
     margin: 30px 0;
 }
