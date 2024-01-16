@@ -5,6 +5,16 @@
     padding-bottom: 300px;
     /* 예시 */
 }
+.inner
+{
+    width: calc(100% * ((1403 / 1903)));
+}
+#header .inner,
+#footer .inner
+{
+    width: calc(100% * ((1703 / 1903)));
+
+}
 
 /* sec_1 */
 #sec_1 h1 {
