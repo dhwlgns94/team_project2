@@ -6,42 +6,10 @@
     /* 예시 */
 }
 
-.inner {
-    width: calc(100% * ((1403 / 1903)));
-}
-
-#header .inner,
-#footer .inner {
-    width: calc(100% * ((1703 / 1903)));
-
-}
-
-
-
-@media (max-width : 1200px) {
-    #main section {
-        margin: 100px 0;
-    }
-}
-
-@media (max-width : 768px) {
-    #main h2 {
-        font-size: 4rem;
-    }
-}
-
-
-
 /* sec_1 */
 #sec_1 h1 {
     text-align: center;
     padding-top: 250px;
-}
-
-@media (max-width : 768px) {
-    #sec_1 h1 span {
-        font-size: 4rem;
-    }
 }
 
 /* search */
@@ -66,13 +34,11 @@
     margin-left: 20px;
     text-align: center;
     background: #eee;
-    /* width: 400px; */
- width: calc(100% - 60px);
+    width: 400px;
     height: 50px;
     font-size: 1.6rem;
     padding: 0 20px;
 }
-
 
 .search input[type="submit"] {
     background: url('../img/search_btn.png') no-repeat center center;
@@ -82,21 +48,12 @@
     cursor: pointer;
 }
 
-@media (max-width : 768px) {
-    #sec_1 input {
-        max-width: 70%;
-        }
-}
 
 
 /* sec_2 */
 #sec_2 {
     padding-top: 250px;
 }
-
-@media (max-width : 768px) {
-    #sec_2 {padding: 100px;}
-    }
 
 #sec_2 .inner {
     width: calc(100% * ((800 / 1903)));

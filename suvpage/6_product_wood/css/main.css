@@ -1,6 +1,14 @@
 @charset "utf-8";
 
+.inner {
+    width: calc(100% * ((1403 / 1903)));
+}
 
+#header .inner,
+#footer .inner {
+    width: calc(100% * ((1703 / 1903)));
+
+}
 
 #sec_1 {
     margin-top: 220px;
@@ -29,45 +37,196 @@
     padding-top: 100px;
 }
 
-#sec_3 .inner .obj{display: flex;
-gap: 50px;justify-content: space-between;
-padding: 50px 0;}
-#sec_3 .inner .obj ul li .form{display: flex;
-gap: 50px;}
-#sec_3 .inner .obj ul li{position: relative;}
-#sec_3 .inner .obj ul li .more{position: absolute;
-left: 250px;
-top: 320px;
-cursor: pointer;}
-
-#sec_3 .inner .form{background-color: #F7F8FA;padding: 50px;
-border-radius: 20px;}
-
-#sec_3 .inner .obj ul li .form .est .est_txt_1{
+#sec_3 .inner .sti {
     display: flex;
-    gap: 100px;
+    gap: 150px;
+
+    padding: 50px;
 }
-#sec_3 .inner .obj ul li .form .est .est_txt_1 a{
-   display: block;
-     padding:10px 20px;
-     background:#fff;
+
+
+#sec_3 .inner .sti li {
+    width: calc((100% - 300px) / 2);
+    position: relative;
+}
+#sec_3 .inner .sti li img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+#sec_3 .inner .sti li .kr_h3 {
+    margin-top: 10px;
+}
+
+#sec_3 .inner .sti li svg{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    cursor: pointer;
+}
+.js_1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position:relative;
-    transition: all 0.3s;
-    overflow: hidden;
-    width:100%;
-    color:#000;
-    border: 1px solid rgba(0,0,0,0.3);
+    height:100vh;
+}
+
+
+#sec_3 .inner .list {
+    background-color: #F7F8FA;
+    width: 750px;
+    padding: 50px;
+    border-radius: 30px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition:all 0.5s !important;
+
+}
+#sec_3 .inner .list.off
+{
+    opacity: 0;
+}
+
+#sec_3 .inner .sti li svg {
+    transition: all 1s;
+    cursor: pointer;
+}
+
+#sec_3 .inner .sti li svg:hover {
+    transform: rotate(180deg);
+}
+
+
+#sec_3 .inner .sti li svg:hover .more_btn_box {
+    fill: #2687E0;
+    ;
+    stroke: #fff;
+    ;
+}
+
+#sec_3 .inner .sti li svg:hover .more_btn {
+    fill: #fff;
+
+}
+
+
+
+
+#sec_3 .inner .list
+{
+    transition:all 0.2s;
+}
+#sec_3 .inner .list .form {
+    display: flex;
+    gap: 30px;
+
+}
+
+#sec_3 .inner .list .form img {
+    width: 280px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+#sec_3 .inner .list .form .form_txt .kr_p2 {
+    margin-right: 30px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#sec_3 .inner .list .form .form_txt select {
+    width: 250px;
+    border-radius: 5px;
+    height: 30px;
+    margin-bottom: 5px;
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#sec_3 .inner .list .form .form_txt input {
+    width: 50px;
+    border-radius: 5px;
+    height: 30px;
+    margin-bottom: 5px;
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-right: 10px;
+}
+
+
+#sec_3 .inner .list .form .form_txt .btn {
+    text-align: center;
+}
+
+#sec_3 .inner .list .form .form_txt .btn_box .btn {
     border-radius: 10px;
     text-align: center;
-    }
-    #sec_3 .inner .obj ul li .form .est .est_txt_1 
-    a:hover
-    {
-   background:#0070ff;
-   border: 1px solid #0070ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 30px;
+
+}
+
+.btn_box {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+#sec_3 .inner .list .form .form_txt .btn p {
+    margin: 0;
+}
+
+.btn_box a:nth-child(1),
+.btn_box a:nth-child(2)
+
+{
+    display: block;
+    padding: 10px 20px;
+    background: #fff;
+    position: relative;
+    transition: all 0.3s;
+    overflow: hidden;
+    width: 100%;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.btn_box a:nth-child(1):hover
+{
+    background:#333;
+    border: 1px solid #333;
     color:#fff;
-    }
-    
-    
-    
-    
+}
+
+.btn_box a:nth-child(2):hover
+{
+    background:#0070ff;
+    border: 1px solid #0070ff;
+    color:#fff;
+}
+
+
+
+
+
+/* #sec_3 .inner .list .form .form_txt .btn_box .btn a:hover{border: rgba(0, 0, 0, 0.3) 2px solid;color: #ffff;background-color: rgba(0, 0, 0, 0.7);
+transition: all 0.3s;}
+#sec_3 .inner .list .form .form_txt .btn_box .btn a:nth-child(2){border: 2px #0070ff solid;background: #fff;color: #0070ff;}
+#sec_3 .inner .list .form .form_txt .btn_box .btn a:nth-child(2):hover{background: #0070ff;color: #fff;transition: all 0.3s;} */
+/* sec_4 */
+#sec_4 .inner {
+    margin: 150px 0;
+    text-align: center;
+    width: 1900px;
+}
+
+#sec_4 .inner span {
+    text-align: center;
+}
