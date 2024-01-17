@@ -22,6 +22,40 @@ $("#header .gnb li").mouseleave(function(){
 });
 
 
+$(".depth2_con").hide();
+
+$("#header .gnb li:nth-child(1)").mouseover(function(){
+    $(".gnb_1").show().siblings().hide();
+});
+$("#header .gnb li:nth-child(1)").mouseleave(function(){
+    $(".gnb_1").hide();
+});
+
+$("#header .gnb li:nth-child(2)").mouseover(function(){
+    $(".gnb_2").show().siblings().hide();
+});
+$("#header .gnb li:nth-child(2)").mouseleave(function(){
+    $(".gnb_2").hide();
+});
+
+$("#header .gnb li:nth-child(3)").mouseover(function(){
+    $(".gnb_3").show().siblings().hide();
+});
+$("#header .gnb li:nth-child(3)").mouseleave(function(){
+    $(".gnb_3").hide();
+});
+
+$("#header .gnb li:nth-child(4)").mouseover(function(){
+    $(".gnb_4").show().siblings().hide();
+});
+$("#header .gnb li:nth-child(4)").mouseleave(function(){
+    $(".gnb_4").hide();
+});
+
+
+
+
+
 // 문서준비이벤트종료
 });
 // 문서준비이벤트종료

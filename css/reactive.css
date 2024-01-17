@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* 노트북 inner는 그대로 가져갈 것 */
+
+
+/* 노트북 */
+@media (max-width:1280px)
+/* mac_book_air 반응형  노트북 중에서 작은사이즈로 선정 */
+{
+    .value_txt
+    {
+        padding-right:0px;
+    }
+    .value_txt dl dd
+    {
+        width:100%;
+    }
+    .vision_txt_bottom
+    {
+        padding-right:100px;
+    }
+}
+/* 노트북 */
+
+
+/* 패드 */
+/* inner 40px */
+
+
+@media (max-width:1024px)
+/* ipad mini 가로형 반응형 높이: 768px */
+{
+
+}
+/* 패드 */
+
+
+
+@media (max-width:768px)
+/* ipad mini 세로형 반응형 높이: 1024px */
+{
+
+}
+/* 패드 */
+
+
+
+/* 모바일 */
+
+@media (max-width:414px)
+/*iphone 11 반응형 */
+{
+
+}
+
+@media (max-width:320px)
+/*iphone5 반응형 */
+{
+
+}
+
+/* 모바일 */
+
+
+
+

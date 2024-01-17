@@ -48,19 +48,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0 60px;
-    border-bottom: 2px solid rgba(0,0,0,0);
+    border-bottom: 4px solid rgba(0,0,0,0);
     height:100%;
-    transition: all 0.2s;
+    transition: all 0.1s;
     position:relative;
 
+
 }
+
+#header .gnb > li > a
+{
+    display: block;
+    padding:10px 60px;
+    font-weight:400;
+
+
+}
+
 #header .gnb > li:hover
 {
-    border-bottom: 2px solid #0070c0;
     background:#f7f8fa;
+}
 
+#header .gnb > li:hover > a
+{
+    color:#0070c0;
+    font-weight:500;
 
+}
+
+#header .gnb > li:hover .depth2
+{
+    background:#f7f8fa;
 }
 
 /* header */
@@ -73,10 +92,15 @@
     position: fixed;
     top:80px;
     left:0;
-    background:#fff;
     z-index:1 ;
+    background:#f7f8fa;
 
 }
+.depth2_bg img
+{
+    border-radius: 5px;
+}
+
 .depth2
 {
     position:absolute;
@@ -84,8 +108,10 @@
     left:0;
     text-align: center;
     width:100%;
-    background:rgba(0,0,0,0);
+    height:150px;
+    
 }
+
 .depth2 .kr_p3
 {
     font-weight:400;
@@ -94,19 +120,67 @@
 .depth2 a
 {
     display: block;
-    padding:10px 0px;
-    transition: all 0.2s;
-    color:rgba(0,0,0,0.5);
-
+    transition: all 0.1s;
+    padding:10px;
 }
 .depth2 a:hover
 {
-    color:rgba(0,0,0);
+    color:#0070c0;
+}
+.depth2 a span
+{
+    display: inline-block;
+    position:relative;
 
+}
+.depth2 a span::after
+{
+    content: '';
+    background:#0070c0;
+    height:3px;
+    width:0%;
+    position: absolute;
+    bottom:-10px;
+    left:50%;
+    transition: all 0.3s;
+    transform: translateX(-50%);    
+}
+.depth2 a:hover span::after
+{
+    width:110%;
 }
 
 
 /* depth2 */
+.depth2_bg 
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.depth2_bg_inner
+{
+    width:50%;
+}
+
+.gnb_1_right
+{
+    text-align: right;
+}
+.gnb_1_right span
+{
+    margin-right:5px;
+}
+.depth2_con
+{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding:20px 0px;
+    gap:20px;
+}
+
+
 
 /* footer */
 #footer
