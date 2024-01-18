@@ -37,6 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position:relative;
 }
 #header .gnb
 {
@@ -218,10 +219,7 @@
 {
     margin-top:20px;
 }
-.footer_left .kr_p2
-{
-    margin-bottom:10px;
-}
+
 /* footer_left */
 
 
@@ -264,5 +262,234 @@
     gap:20px;
 }
 /* footer */
+
+
+.btn_ham_box
+{
+    position:absolute;
+    top:50%;
+    right:0;
+    transform: translateY(-50%);
+    display: none;
+}
+.btn_ham li
+{
+    background:#666;
+    width:30px;
+    height:3px;
+    border-radius: 3px;
+}
+.btn_ham
+{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sitemap
+{
+    height:100vh;
+    width: 100vw;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:99999999;
+    display: flex;
+}
+
+.sitemap_left,
+.sitemap_right
+{
+    height:100%;
+}
+
+.sitemap_left
+{
+    width:70%;
+    backdrop-filter: blur(20px);
+}
+.sitemap_right
+{
+    width:30%;
+    background:#fff;
+    padding:50px;
+
+}
+.sitemap_right a
+{
+    display:inline-block;
+}
+
+.sitemap_gnb
+{
+    text-align: right;
+    padding:20px;
+}
+.sitemap_gnb > li
+{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.sitemap_gnb > li:hover
+{
+    background:#f7f8fa;
+}
+.sitemap_gnb > li:hover > a
+{
+    color:#0070c0;
+
+}
+.sitemap_gnb > li > a
+{
+    padding:20px 20px;
+    position:relative;
+    transition:all 0.2s;
+}
+
+.sitemap_depth2 a
+{
+    padding:20px;
+    position:relative;
+}
+.sitemap_depth2 a::after
+{
+    content:'';
+    background:#0070c0;
+    width:0%;
+    height:5px;
+    transition:all 0.2s;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+.sitemap_depth2 li:hover a::after
+{
+   width:100%;
+}
+
+.sitemap_gnb .kr_p2
+{
+    font-weight:500;
+}
+.sitemap_gnb .kr_p3
+{
+    font-weight:400;
+}
+.sitemap
+{
+    transform:translateX(100%);
+    transition:transform 0.3s;
+}
+
+.sitemap.on 
+{
+    transform:translateX(0%);
+}
+.sitemap.close
+{
+    transform:translateX(100%);
+    
+}
+
+
+/* common reactive */
+
+
+
+/* 노트북 */
+@media (max-width:1280px)
+/* mac_book_air 반응형  노트북 중에서 작은사이즈로 선정 */
+{
+    .inner
+    { width : calc(100% * ((1503 / 1903)));}
+
+    #header .gnb
+    {
+        display: none;
+    }
+    .btn_ham_box
+    {
+        display: block ;
+    }
+    .footer_right ul
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_left
+    {
+        width:100%;
+        display: flex;
+        gap:20px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    #footer .inner
+    {
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+    .cs_center dl
+    {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap:50px;
+    }
+    .cs_center dl dt:nth-child(1)
+    {
+        text-align: right;
+    }
+    .footer_center
+    {
+        width:80%;
+    }
+}
+/* 노트북 */
+
+
+/* 패드 */
+/* inner 40px */
+
+
+@media (max-width:1024px)
+/* ipad mini 가로형 반응형 높이: 768px */
+{
+
+}
+/* 패드 */
+
+
+
+@media (max-width:768px)
+/* ipad mini 세로형 반응형 높이: 1024px */
+{
+
+}
+/* 패드 */
+
+
+
+/* 모바일 */
+
+@media (max-width:414px)
+/*iphone 11 반응형 */
+{
+
+}
+
+@media (max-width:320px)
+/*iphone5 반응형 */
+{
+
+}
+
+/* 모바일 */
+
+
 
 

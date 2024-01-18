@@ -56,6 +56,28 @@ $("#header .gnb li:nth-child(4)").mouseleave(function(){
 
 
 
+
+
+$(".sitemap_gnb > li").mouseover(function(){
+    $(this).find(".sitemap_depth2").stop().slideDown();
+});
+$(".sitemap_gnb > li").mouseleave(function(){
+    $(this).find(".sitemap_depth2").stop().slideUp();
+});
+
+$(".btn_ham_box").click(function(){
+    $(".sitemap").addClass("on");
+    $(".sitemap").removeClass("close");
+
+});
+$(".sitemap_left").click(function(){
+    $(".sitemap").removeClass("on");
+    $(".sitemap").addClass("close");
+});
+
+$(".sitemap_depth2").hide();
+
+
 // 문서준비이벤트종료
 });
 // 문서준비이벤트종료
