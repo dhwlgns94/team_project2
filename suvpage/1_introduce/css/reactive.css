@@ -1,0 +1,857 @@
+@charset "utf-8";
+
+@media (max-width:1280px) {
+    #sec_3 h2 {
+        font-size: 5rem;
+    }
+
+    #sec_3 h3 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:1024px)
+/* ipad mini 가로형 반응형 높이: 768px */
+    {
+    /* ★ 아이패드 미니 - 가로형 공동여백 수치 입니다! ★ */
+
+    #main .inner {
+        width: calc(100% * ((1503 / 1903)));
+    }
+
+    /* ★ 아이패드 미니 - 가로형 공동여백 수치 입니다! ★ */
+
+    #sec_1 img {
+        width: 100%;
+    }
+
+    #sec_2 .inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #sec_2 .inner .main_txt {
+        width: 100%;
+    }
+
+    #sec_2 .inner .more {
+        width: 100%;
+    }
+
+    #sec_3 img {
+        width: 100%;
+        ;
+    }
+
+    #sec_3 .sec_3_right {
+        width: 100%;
+        padding-top: 0;
+    }
+
+
+    #sec_3 .kr_h1 {
+        margin-bottom: 100px;
+    }
+
+
+    .sec_3_img_right {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        z-index: -2;
+    }
+
+    .sec_3_img_left {
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        z-index: -2;
+    }
+
+
+
+    .sec_4_top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sec_4_mid_left {
+        display: none;
+    }
+
+
+
+
+    .sec_4_mid_left {
+        display: none;
+    }
+
+    .sec_4_top_right {
+        width: 100%;
+    }
+
+    .sec_4_top_left {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .sec_4_mid_right {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+
+
+    .sec_4_mid_right img {
+        width: 100%;
+    }
+
+
+    #sec_5 {
+        height: 100vh;
+        margin-bottom: 650px;
+    }
+
+
+    #sec_5 iframe {
+        width: 100%;
+    }
+
+    .gang_box>ul {
+        width: 100%;
+    }
+
+
+    .singi_box>ul {
+        width: 100%;
+    }
+    .gang_box,
+    .singi_box {
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .kr_h1 {
+        font-size: 5rem;
+    }
+
+    .en_h1 {
+        font-size: 5rem;
+    }
+
+    .kr_h2 {
+        font-size: 2.8rem;
+    }
+
+    .en_h2 {
+        font-size: 2.8rem;
+    }
+
+    .kr_h3 {
+        font-size: 2.5rem;
+    }
+
+    .en_h3 {
+        font-size: 2.5rem;
+    }
+
+    .kr_p2 {
+        font-size: 1.6rem;
+    }
+
+    .en_p2 {
+        font-size: 1.6rem;
+    }
+
+    .kr_p3 {
+        font-size: 1.5rem;
+    }
+
+    .en_p3 {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media (max-width:768px)
+/* ipad mini 세로형 반응형 높이: 1024px */
+    {
+
+    /* ★ 아이패드 미니 - 세로형 공동여백 수치 입니다! ★ */
+
+    #main .inner {
+        width: calc(100% * ((1603 / 1903)));
+    }
+
+    /* ★ 아이패드 미니 - 세로형 공동여백 수치 입니다! ★ */
+
+
+
+    #sec_1 img {
+        width: 100%;
+    }
+
+    #sec_2 .inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #sec_2 .inner .main_txt {
+        width: 100%;
+    }
+
+    #sec_2 .inner .more {
+        width: 100%;
+    }
+
+    #sec_3 img {
+        width: 100%;
+        ;
+    }
+
+    #sec_3 .sec_3_right {
+        width: 100%;
+        padding-top: 0;
+    }
+
+
+    #sec_3 .kr_h1 {
+        margin-bottom: 100px;
+    }
+
+
+    .sec_3_img_right {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        z-index: -2;
+    }
+
+    .sec_3_img_left {
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        z-index: -2;
+    }
+
+
+
+    .sec_4_top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sec_4_mid_left {
+        display: none;
+    }
+
+
+
+
+    .sec_4_mid_left {
+        display: none;
+    }
+
+    .sec_4_top_right {
+        width: 100%;
+    }
+
+    .sec_4_top_left {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .sec_4_mid_right {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+
+
+    .sec_4_mid_right img {
+        width: 100%;
+    }
+
+
+    #sec_5 {
+        height: 100vh;
+        margin-bottom: 650px;
+    }
+
+    .sec_4_top_left .kr_h2_top::after {
+        content: '';
+        width: 200px;
+        height: 8px;
+        position: absolute;
+        left: 0;
+        bottom: 45px;
+        background: #0070C0;
+    }
+    #sec_5 iframe {
+        width: 100%;
+    }
+
+    .gang_box>ul {
+        width: 100%;
+    }
+
+
+    .singi_box>ul {
+        width: 100%;
+    }
+    .gang_box,
+    .singi_box {
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+
+    .kr_h1 {
+        font-size: 3.2rem;
+    }
+
+    .en_h1 {
+        font-size: 3.2rem;
+    }
+
+    .k3_p1 {
+        font-size: 2rem;
+    }
+
+    .en_p1 {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width:414px) {
+    #main .inner {
+        width: calc(100% * ((1703 / 1903)));
+    }
+
+    #sec_1 img {
+        width: 100%;
+    }
+
+    #sec_2 .inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #sec_2 .inner .main_txt {
+        width: 100%;
+    }
+
+    #sec_2 .inner .more {
+        width: 100%;
+    }
+
+    #sec_3 img {
+        width: 100%;
+        ;
+    }
+
+    #sec_3 .sec_3_right {
+        width: 100%;
+        padding-top: 0;
+    }
+
+
+    #sec_3 .kr_h1 {
+        margin-bottom: 100px;
+    }
+
+
+    .sec_3_img_right {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        z-index: -2;
+    }
+
+    .sec_3_img_left {
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        z-index: -2;
+    }
+
+
+
+    .sec_4_top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sec_4_mid_left {
+        display: none;
+    }
+
+
+
+
+    .sec_4_mid_left {
+        display: none;
+    }
+
+    .sec_4_top_right {
+        width: 100%;
+    }
+
+    .sec_4_top_left {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .sec_4_mid_right {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+
+
+    .sec_4_mid_right img {
+        width: 100%;
+    }
+
+
+    #sec_5 {
+        height: 100vh;
+        margin-bottom: 650px;
+    }
+
+
+    #sec_5 iframe {
+        width: 100%;
+    }
+
+    .gang_box>ul {
+        width: 100%;
+    }
+
+
+    .singi_box>ul {
+        width: 100%;
+    }
+    .gang_box,
+    .singi_box {
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .kr_h1 {
+        font-family: 'noto sans KR';
+        font-weight: 500;
+        font-size: 3.2rem;
+        letter-spacing: -4px;
+        text-transform: uppercase;
+    }
+
+    .en_h1 {
+        font-family: 'sf';
+        letter-spacing: -3px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 3.2rem;
+        text-transform: uppercase;
+
+
+    }
+
+
+    .kr_h2 {
+        font-family: 'noto sans KR';
+        font-weight: 500;
+        font-size: 2.8rem;
+        letter-spacing: -2px;
+
+    }
+
+    .en_h2 {
+        font-family: 'sf';
+        font-weight: 300;
+        font-size: 2.8rem;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+
+    }
+
+    .kr_h3 {
+        font-family: 'noto sans KR';
+        font-weight: 300;
+        font-size: 1.6rem;
+        letter-spacing: -2px;
+        text-transform: uppercase;
+
+    }
+
+    .en_h3 {
+        font-family: 'sf';
+        font-weight: 200;
+        font-size: 1.6rem;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+
+    }
+
+    .kr_p1 {
+        font-family: 'noto sans KR';
+        font-weight: 300;
+        font-size: 2rem;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+
+    }
+
+    .en_p1 {
+        font-family: 'sf';
+        font-weight: 200;
+        font-size: 2rem;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+
+    }
+
+    .kr_p2 {
+        font-family: 'noto sans KR';
+        font-weight: 300;
+        font-size: 1.6rem;
+        letter-spacing: -1.5px;
+        text-transform: uppercase;
+
+    }
+
+    .en_p2 {
+        font-family: 'sf';
+        font-weight: 100;
+        font-size: 1.6rem;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+
+    }
+
+    .kr_p3 {
+        font-family: 'noto sans KR';
+        font-weight: 200;
+        font-size: 1.5rem;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+
+    }
+
+    .en_p3 {
+        font-family: 'sf';
+        font-weight: 100;
+        font-size: 1.5rem;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+
+    }
+
+    .kr_p4 {
+        font-family: 'noto sans KR';
+        font-weight: 200;
+        font-size: 1.2rem;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+
+    }
+
+    .en_p4 {
+        font-family: 'sf';
+        font-weight: 100;
+        font-size: 1.2rem;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+
+    }
+
+
+
+}
+
+@media (max-width:320px) {
+
+
+    #main .inner {
+        width: calc(100% * ((1703 / 1903)));
+    }
+
+    #sec_1 img {
+        width: 100%;
+    }
+
+    #sec_2 .inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #sec_2 .inner .main_txt {
+        width: 100%;
+    }
+
+    #sec_2 .inner .more {
+        width: 100%;
+    }
+
+    #sec_3 img {
+        width: 100%;
+        ;
+    }
+
+    #sec_3 .sec_3_right {
+        width: 100%;
+        padding-top: 0;
+    }
+
+
+    #sec_3 .kr_h1 {
+        margin-bottom: 100px;
+    }
+
+
+    .sec_3_img_right {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        z-index: -2;
+    }
+
+    .sec_3_img_left {
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        z-index: -2;
+    }
+
+
+
+    .sec_4_top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sec_4_mid_left {
+        display: none;
+    }
+
+
+
+
+    .sec_4_mid_left {
+        display: none;
+    }
+
+    .sec_4_top_right {
+        width: 100%;
+    }
+
+    .sec_4_top_left {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .sec_4_mid_right {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .sec_4_top_left .kr_h2_top::after {
+        content: '';
+        width: 200px;
+        height: 8px;
+        position: absolute;
+        left: 0;
+        bottom: 83px;
+        background: #0070C0;
+    }
+
+    .sec_4_mid_right img {
+        width: 100%;
+    }
+
+
+    #sec_5 {
+        height: 100vh;
+        margin-bottom: 650px;
+    }
+
+
+    #sec_5 iframe {
+        width: 100%;
+    }
+
+    .gang_box>ul {
+        width: 100%;
+    }
+
+
+    .singi_box>ul {
+        width: 100%;
+    }
+    .gang_box,
+    .singi_box {
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+
+
+
+
+
+    .kr_h1 {
+        font-family: 'noto sans KR';
+        font-weight: 500;
+        font-size: 3.2rem;
+        letter-spacing: -4px;
+        text-transform: uppercase;
+    }
+
+    .en_h1 {
+        font-family: 'sf';
+        letter-spacing: -3px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 3.2rem;
+        text-transform: uppercase;
+
+
+    }
+
+
+    .kr_h2 {
+        font-family: 'noto sans KR';
+        font-weight: 500;
+        font-size: 2.8rem;
+        letter-spacing: -2px;
+
+    }
+
+    .en_h2 {
+        font-family: 'sf';
+        font-weight: 300;
+        font-size: 2.8rem;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+
+    }
+
+    .kr_h3 {
+        font-family: 'noto sans KR';
+        font-weight: 300;
+        font-size: 1.6rem;
+        letter-spacing: -2px;
+        text-transform: uppercase;
+
+    }
+
+    .en_h3 {
+        font-family: 'sf';
+        font-weight: 200;
+        font-size: 1.6rem;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+
+    }
+
+    .kr_p1 {
+        font-family: 'noto sans KR';
+        font-weight: 300;
+        font-size: 2rem;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+
+    }
+
+    .en_p1 {
+        font-family: 'sf';
+        font-weight: 200;
+        font-size: 2rem;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+
+    }
+
+    .kr_p2 {
+        font-family: 'noto sans KR';
+        font-weight: 300;
+        font-size: 1.6rem;
+        letter-spacing: -1.5px;
+        text-transform: uppercase;
+
+    }
+
+    .en_p2 {
+        font-family: 'sf';
+        font-weight: 100;
+        font-size: 1.6rem;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+
+    }
+
+    .kr_p3 {
+        font-family: 'noto sans KR';
+        font-weight: 200;
+        font-size: 1.5rem;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+
+    }
+
+    .en_p3 {
+        font-family: 'sf';
+        font-weight: 100;
+        font-size: 1.5rem;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+
+    }
+
+    .kr_p4 {
+        font-family: 'noto sans KR';
+        font-weight: 200;
+        font-size: 1.2rem;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+
+    }
+
+    .en_p4 {
+        font-family: 'sf';
+        font-weight: 100;
+        font-size: 1.2rem;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+
+    }
+
+
+}
