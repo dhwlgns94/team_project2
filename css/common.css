@@ -1,0 +1,636 @@
+@charset "utf-8";
+/* header */
+#header
+{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    height:80px;
+    display: flex;
+    align-items: center;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#fff;
+    z-index:2 ;
+}
+#header .logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:180px;
+    height:100%;
+    transition:all 0.2s;
+    border-bottom: 2px solid #0070c0;
+
+}
+
+#header .logo img
+{
+    width:100%;
+
+}
+
+#header .inner
+{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:relative;
+}
+#header .gnb
+{
+    display: flex;
+    height:100%;
+}
+#header .gnb > li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid rgba(0,0,0,0);
+    height:100%;
+    transition: all 0.1s;
+    position:relative;
+
+
+}
+
+#header .gnb > li > a
+{
+    display: block;
+    padding:10px 60px;
+    font-weight:400;
+
+
+}
+
+#header .gnb > li:hover
+{
+    background:#f7f8fa;
+}
+
+#header .gnb > li:hover > a
+{
+    color:#0070c0;
+    font-weight:500;
+
+}
+
+#header .gnb > li:hover .depth2
+{
+    background:#f7f8fa;
+}
+
+/* header */
+
+/* depth2 */
+.depth2_bg
+{
+    width:100vw;
+    height:150px;
+    position: fixed;
+    top:80px;
+    left:0;
+    z-index:1 ;
+    background:#f7f8fa;
+
+}
+.depth2_bg img
+{
+    border-radius: 5px;
+}
+
+.depth2
+{
+    position:absolute;
+    top:80px;
+    left:0;
+    text-align: center;
+    width:100%;
+    height:150px;
+    
+}
+
+.depth2 .kr_p3
+{
+    font-weight:400;
+}
+
+.depth2 a
+{
+    display: block;
+    transition: all 0.1s;
+    padding:10px;
+}
+.depth2 a:hover
+{
+    color:#0070c0;
+}
+.depth2 a span
+{
+    display: inline-block;
+    position:relative;
+
+}
+.depth2 a span::after
+{
+    content: '';
+    background:#0070c0;
+    height:3px;
+    width:0%;
+    position: absolute;
+    bottom:-10px;
+    left:50%;
+    transition: all 0.3s;
+    transform: translateX(-50%);    
+}
+.depth2 a:hover span::after
+{
+    width:110%;
+}
+
+
+/* depth2 */
+.depth2_bg 
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.depth2_bg_inner
+{
+    width:50%;
+}
+
+.gnb_1_right
+{
+    text-align: right;
+}
+.gnb_1_right span
+{
+    margin-right:5px;
+}
+.depth2_con
+{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding:20px 0px;
+    gap:20px;
+}
+
+.gnb_1_right_place
+{
+    width:100%;
+}
+.gnb_1_right_place > li
+{
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    width:100%;
+    text-align: right;
+}
+.gnb_placename
+{
+    font-weight:400;
+    text-align: left;
+    display: inline-block;
+    font-size:2.2rem;
+}
+/* footer */
+#footer
+{
+    background:#f7f8fa;
+    padding:50px 0px;
+}
+#footer .inner
+{
+    display: flex;
+}
+
+
+
+.footer_left
+{
+    width:20%;
+}
+.footer_center
+{
+    width:60%;
+}
+.footer_right
+{
+    width:20%;
+}
+
+
+/* footer_left */
+.footer_logo
+{
+    width:180px;
+}
+.cs_center
+{
+    margin-top:20px;
+}
+
+/* footer_left */
+
+
+/* footer_center */
+.footer_center
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.footer_center .footer_btn
+{
+    display: flex;
+    margin-bottom:10px;
+}
+.footer_center .footer_btn li
+{
+    padding:5px 20px;
+}
+.footer_center .footer_btn li:first-child
+{
+    padding-left:0px;
+}
+
+/* footer_center */
+.footer_right
+{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.footer_right path
+{
+    fill:#666;
+}
+.footer_right ul
+{
+    display: flex;
+    gap:20px;
+}
+/* footer */
+
+
+.btn_ham_box
+{
+    position:absolute;
+    top:50%;
+    right:0;
+    transform: translateY(-50%);
+    display: none;
+}
+.btn_ham li
+{
+    background:#666;
+    width:30px;
+    height:3px;
+    border-radius: 3px;
+}
+.btn_ham
+{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sitemap
+{
+    height:100vh;
+    width: 100vw;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:99999999;
+    display: flex;
+}
+
+.sitemap_left,
+.sitemap_right
+{
+    height:100%;
+}
+
+.sitemap_left
+{
+    width:70%;
+    backdrop-filter: blur(20px);
+}
+.sitemap_right
+{
+    width:30%;
+    background:#fff;
+    padding:50px;
+
+}
+.sitemap_right a
+{
+    display:inline-block;
+}
+
+.sitemap_gnb
+{
+    text-align: right;
+    padding:20px;
+}
+.sitemap_gnb > li
+{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.sitemap_gnb > li:hover
+{
+    background:#f7f8fa;
+}
+.sitemap_gnb > li:hover > a
+{
+    color:#0070c0;
+
+}
+.sitemap_gnb > li > a
+{
+    padding:20px 20px;
+    position:relative;
+    transition:all 0.2s;
+}
+.sitemap_gnb > li > span
+{
+    padding:20px 20px;
+    display: inline-block;
+    transition:all 0.2s;
+    cursor: pointer;
+}
+
+.sitemap_depth2 a
+{
+    padding:20px;
+    position:relative;
+}
+.sitemap_depth2 a::after
+{
+    content:'';
+    background:#0070c0;
+    width:0%;
+    height:5px;
+    transition:all 0.2s;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+.sitemap_depth2 li:hover a::after
+{
+   width:100%;
+}
+
+.sitemap_gnb .kr_p2
+{
+    font-weight:500;
+}
+.sitemap_gnb .kr_p3
+{
+    font-weight:400;
+}
+.sitemap
+{
+    transform:translateX(100%);
+    transition:transform 0.3s;
+}
+
+.sitemap.on 
+{
+    transform:translateX(0%);
+}
+.sitemap.close
+{
+    transform:translateX(100%);
+    
+}
+.footer_br
+{
+    display: none;
+}
+.footer_br_414
+{
+    display: none;
+}
+.br_320
+{
+    display: none;
+}
+/* common reactive */
+
+
+
+/* 노트북 */
+@media (max-width:1280px)
+/* mac_book_air 반응형  노트북 중에서 작은사이즈로 선정 */
+{
+    .inner
+    { width : calc(100% * ((1503 / 1903)));}
+
+    #header .gnb
+    {
+        display: none;
+    }
+    .btn_ham_box
+    {
+        display: block ;
+    }
+    .footer_right ul
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_left
+    {
+        width:100%;
+        display: flex;
+        gap:20px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    #footer .inner
+    {
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+    .cs_center dl
+    {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap:50px;
+    }
+    .cs_center dl dt:nth-child(1)
+    {
+        text-align: right;
+    }
+    .footer_center
+    {
+        width:80%;
+    }
+    .footer_right
+    {
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_right ul
+    {
+        flex-direction:inherit;
+        justify-content: center;
+    }
+}
+/* 노트북 */
+
+
+/* 패드 */
+/* inner 40px */
+
+
+@media (max-width:1024px)
+/* ipad mini 가로형 반응형 높이: 768px */
+{
+    .sitemap_left
+    {
+        width:65%;
+    }
+    .sitemap_right
+    {
+        width: 35%;
+    }
+}
+/* 패드 */
+
+
+
+@media (max-width:768px)
+/* ipad mini 세로형 반응형 높이: 1024px */
+{
+    .sitemap_left
+    {
+        width:55%;
+    }
+    .sitemap_right
+    {
+        width: 45%;
+    }
+    .footer_center
+    {
+        width:100%;
+        margin-bottom:50px;
+    }
+    .footer_br
+    {
+        display: block;
+    }
+
+}
+/* 패드 */
+
+
+
+/* 모바일 */
+
+@media (max-width:414px)
+/*iphone 11 반응형 */
+{
+    #header
+    {
+        height:60px;
+    }
+    #header .logo
+    {
+        width:40%;
+    }
+    .sitemap_right
+    {
+        width:65%;
+        padding:20px;
+    }
+    .sitemap_left
+    {
+        width:35%;
+    }
+    .cs_center dl
+    {
+        gap:20px;
+    }
+    .footer_br_414
+    {
+        display: block;
+    }
+    .footer_btn 
+    {
+        justify-content: center;
+    }
+    .footer_btn li
+    {
+        padding:5px !important;
+        text-align: center;
+    }
+    .footer_btn li:first-child
+    {
+        padding-left:0px !important;
+    }
+    .footer_btn li:last-child
+    {
+        padding-right:0px !important;
+    }
+    .cs_center dl
+{
+    flex-direction: column;
+    text-align: left !important;
+    align-items: start;
+}
+.cs_center dl dt:nth-child(1)
+{
+    text-align: left;
+}
+
+    .footer_btn 
+    {
+        gap:5px;
+    }
+    .footer_btn li
+    {
+        padding:0 !important;
+    }
+
+}
+
+
+@media (max-width:320px)
+/*iphone5 반응형 */
+{
+    .sitemap_right
+    {
+        padding:5px;
+    }
+    #header
+    {
+        height:60px;
+    }
+    #header .logo
+    {
+        width:30%;
+    }
+}
+
+/* 모바일 */
+
+
+
+
