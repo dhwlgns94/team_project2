@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+
+.inner
+{
+    width: calc(100% * ((1403 / 1903)));
+}
+#header .inner,
+#footer .inner
+{
+    width: calc(100% * ((1703 / 1903)));
+
+}
+
+#banner
+{
+    margin: 80px 0; 
+    width: 100%;
+    height: 460px;
+    background-image: url('../img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#gang_place
+{
+    padding:200px 0px;
+}
+.name 
+{
+    border-top:8px solid #0070FF;
+    width: 20%;
+}
+.gang_top ul:nth-child(2)
+{
+    width:80%;
+}
+
+.name .kr_h2
+{
+    font-weight:400;
+}
+.gang_top
+{
+    display: flex;
+    gap:50px;
+    margin-bottom:100px;
+}
+
+.gang_top .kr_h3,
+.gang_top .en_h3 
+{
+    margin-right:10px;
+}
+
+.gang_bottom img
+{
+    width:100%;
+}
+
+
+#ctl .txt_bottom
+{
+    margin-bottom:100px;
+}
+#ctl .txt_bottom .en_p2
+{
+    font-weight:200;
+}
+
+.ctl_img_top
+{
+    display: flex;
+    gap:20px;
+    text-align: center;
+    margin-bottom:50px;
+}
+.ctl_img_top > div
+{
+    width: calc((100% - 60px) / 3 );
+    /* 예시 */
+    display: flex;
+    flex-direction: column;
+}
+#ctl .txt_box
+{
+    display: flex;
+    gap:50px;
+
+}
+#ctl .txt_box .txt_left
+{
+    border-top:8px solid #0070FF;
+    width:20%;
+
+}
+#ctl .txt_box .txt_right
+{
+    width:80%;
+}
+
+/* .txt_mid .en_h2
+{
+    white-space : normal
+} */
+
+.img1_1 img
+{
+    width:100%;
+}
+.cutter
+{
+    margin:200px 0px;
+}
+.cutter h2
+{
+    margin-bottom: 50px;
+}
+
+.cutter img
+{
+    width:100%;
+}
+.cutter .kr_p1
+{
+    margin-top:10px;
+}
+.cutter .inner
+{
+    height:100%;
+}
+.cutter .inner > ul
+{
+    display: flex;
+    justify-content: space-between;
+    height:100%;
+
+}
+
+.cutter .inner > ul > li
+{
+    height:100%;
+}
+
+.cutter .kr_p1
+{
+    line-height: 1.2;
+}
+.cutter_con_left
+{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+
+} 
+
+
+.coil_img_place
+{
+    width:100%;
+    /* 높이는 예시 */
+    margin:50px 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coil_img_place img
+{
+    width:100%;
+
+}
+
+
+.coil_bottom_txt
+{
+    text-align: center;
+    color:#333;
+    padding:200px;
+}
+    
+.wood_img_place
+{
+    display: flex;
+    justify-content: space-between;
+    margin:50px 0px;
+
+}
+.wood_img_place img
+{
+    width:100%
+}
+.wood_wrap
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wood_img_place p
+{
+    text-align: center;
+    margin-top: 10px;;
+}
+
