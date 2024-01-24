@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* 노트북 inner는 그대로 가져갈 것 */
+
+
+/* 노트북 */
+@media (max-width:1280px)
+/* mac_book_air 반응형  노트북 중에서 작은사이즈로 선정 */
+{
+
+
+
+    /* 가공문의 섹션 여백 재설정 */
+    /* ★노트북 화면 공동여백 수치 입니다!★ */
+
+    #main .sec1 .inner {width: calc(100% * ((1503 / 1903)));gap: 100px; height: 400px;}
+
+    /* ★노트북 화면 공동여백 수치 입니다!★ */
+
+    #main .sec1 .inner .order {width: calc(100% - 450px);}
+
+    #main .sec1 .inner .coil_img .img1 {
+        left: -50px; 
+        top: -50px;
+        height: 400px;
+        background-size: cover;
+    }
+    #main .sec1 .inner .coil_img .img2 {
+        left: -50px; 
+        top: -50px;
+        height: 400px;
+        background-size: cover;
+    }
+    #main .sec1 .inner .coil_img .img3 {
+        left: -50px; 
+        top: -50px;
+        height: 400px;
+        background-size: cover;
+    }
+    #main .sec1 .inner .coil_img .img_bg {
+        left: -50px; 
+        top: -50px;
+        height: 400px;
+        background-size: cover;
+    }
+
+
+    #main .sec1 .inner .product {margin-top: 0;}
+
+    #main .sec_txt {margin: 150px 0;}
+
+}
+/* 노트북 */
+
+
+
+
+
+
+
+
+
+/* 패드 */
+/* inner 40px */
+
+
+@media (max-width:1024px)
+/* ipad mini 가로형 반응형 높이: 768px */
+{
+    /* ★ 아이패드 미니 - 가로형 공동여백 수치 입니다! ★ */
+
+    #main .inner {width: calc(100% * ((1503 / 1903)));gap: 50px;  height: 400px; display: block;}
+
+    /* ★ 아이패드 미니 - 가로형 공동여백 수치 입니다! ★ */
+
+
+    #main .sec1 > h1 {font-size: 5rem; text-align: center;}
+    #main .sec1 > h3 {font-size: 2.5rem; text-align: center; text-transform: none;}
+
+    #main .sec1 .inner {margin-top: 50px; height: 200px;}
+    #main .sec1 .inner .cont1 {width: 200px;}
+    #main .sec1 .inner .order {width: 100%;}
+
+
+
+    #main .sec1 .inner .coil_img .img1 {
+        left: -130px;
+        height: 320px;
+        background-size: cover;
+    }
+    #main .sec1 .inner .coil_img .img2 {
+        left: -130px;
+        height: 320px;
+        background-size: cover;
+    }
+    #main .sec1 .inner .coil_img .img3 {
+        left: -130px;
+        height: 320px;
+        background-size: cover;
+    }
+    #main .sec1 .inner .coil_img .img_bg {
+        position: relative;
+        left: -130px;
+        height: 320px;
+        background-size: cover;
+    }
+
+    #main .sec1 .inner .product {width: 100%; height: 250px;}
+    #main .sec1 .inner .pd1 .out_img {
+        margin: 20px;
+        width:200px ; height: 200px; 
+        background-size: cover;
+    }
+    #main .sec1 .inner .pd1 .in_img {
+        margin: 20px;
+        width:200px ; height: 200px; 
+        background-size: cover;
+    }
+    #main .sec1 .inner .pd1 .sid_img {
+        margin: 20px;
+        width:200px ; height: 200px; 
+        background-size: cover;
+    }
+    #main .sec1 .inner .pd1 .pd_txt {margin-top:10px;}
+    #main .sec1 .inner .pd1 .pd_txt > h2 {font-size: 2.8rem;}
+    #main .sec1 .inner .pd1 .pd_txt > h3 {font-size: 1.6rem;}
+    #main .sec1 .inner .pd1 .pd_txt > p {font-size: 1.5rem;}
+
+    #main .sec1 .coil_btn {margin: 35px auto;}
+
+    #main .sec_txt {margin: 150px 0 100px;}
+
+}
+/* 패드 */
+
+
+
+
+
+
+
+@media (max-width:768px)
+/* ipad mini 세로형 반응형 높이: 1024px */
+{
+
+/* ★ 아이패드 미니 - 세로형 공동여백 수치 입니다! ★ */
+
+#main .inner {width: calc(100% * ((1603 / 1903)));gap: 50px;  height:400px; display: block;}
+
+/* ★ 아이패드 미니 - 세로형 공동여백 수치 입니다! ★ */
+
+
+#main .sec1 > h1 {font-size: 5rem; text-align: center;}
+#main .sec1 > h3 {font-size: 2.5rem; text-align: center; text-transform: none;}
+
+#main .sec1 .inner {margin-top: 0px; height: 500px;display: block;}
+#main .sec1 .inner .cont1 {width: 100%; margin: 0 auto;}
+
+#main .sec1 .inner .coil_img {margin: 0 auto;}
+#main .sec1 .inner .coil_img .img1 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-size: cover;
+}
+#main .sec1 .inner .coil_img .img2 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-size: cover;
+}
+#main .sec1 .inner .coil_img .img3 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-size: cover;
+}
+#main .sec1 .inner .coil_img .img_bg {
+    position: relative;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-size: cover;
+}
+
+#main .sec1 .inner .order {width: 100%; margin: 0 auto;}
+#main .sec1 .inner .prd {width: 100%;}
+}
+
+/* 패드 */
+
+
+
+/* 모바일 */
+
+@media (max-width:414px)
+/*iphone 11 반응형 */
+{
+    /* ★ '아이폰 11 - 세로형' 공동여백 수치 입니다! ★ */
+    
+    #main .inner {width: calc(100% * ((1703 / 1903)));}
+
+    /* ★ '아이폰 11 - 세로형' 공동여백 수치 입니다! ★ */
+
+
+    #main .sec1 > h1 {font-size: 3.2rem; text-align: center;}
+    #main .sec1 > h3 {font-size: 2rem; margin: 0 auto; text-transform: none; width: 300px; }
+
+    #main .sec1 .inner {margin-top: 0px; height: 800px;display: block;}
+
+    #main .sec1 .coil_btn {gap:10px;margin-bottom: 0;}
+    #main .sec1 .coil_btn .btn {padding: 10px 20px;}
+    #main .sec1 .coil_btn .btn > h3 {font-size: 2rem;}
+
+    #main .sec1 .inner .product {width: 100%; height: 580px;  }
+    #main .sec1 .inner .pd1 {display: block;  margin:0 auto; padding: 15px 0;} 
+    #main .sec1 .inner .pd1 .out_img {
+        margin:0 auto;
+        width:300px ; height: 300px; 
+        background-size: cover;
+    }
+    #main .sec1 .inner .pd1 .in_img {
+        margin:0 auto;
+        width:300px ; height: 300px; 
+        background-size: cover;
+    }
+    #main .sec1 .inner .pd1 .sid_img {
+        margin:0 auto;
+        width:300px ; height: 300px; 
+        background-size: cover;
+    }
+
+    #main .sec1 .inner .pd1 .pd_txt {padding: 0 15px;}
+
+    #main .sec_txt {width: 300px; margin: 150px auto 50px; word-break: keep-all;}
+}
+
+@media (max-width:320px)
+/*iphone5 반응형 */
+{
+/* ★ '아이폰 5 - 세로형' 공동여백 수치 입니다! ★ */
+    
+.inner
+{ width : calc(100% * ((1703 / 1903))) !important; }
+
+/* ★ '아이폰 5 - 세로형' 공동여백 수치 입니다! ★ */
+
+
+#main .sec1 > h1 {font-size: 2.6rem; text-align: center;}
+#main .sec1 > h3 {font-size: 2rem; margin: 0 auto; text-transform: none; width: 250px; word-break: keep-all;}
+
+#main .sec1 .inner {margin-top: 0px; height: 660px; display: block;}
+
+#main .sec1 .coil_btn {gap:10px;margin-bottom: 0;}
+#main .sec1 .coil_btn .btn {padding: 10px 20px;}
+#main .sec1 .coil_btn .btn > h3 {font-size: 1.6rem;}
+
+
+#main .sec1 .inner .coil_img .img1 {height: 250px;}
+#main .sec1 .inner .coil_img .img2 {height: 250px;}
+#main .sec1 .inner .coil_img .img3 {height: 250px;}
+#main .sec1 .inner .coil_img .img_bg {height: 250px;}
+
+#main .sec1 .inner .product {width: 100%; height: 520px; }
+#main .sec1 .inner .pd1 {display: block;  margin:0 auto; padding: 15px 0;} 
+#main .sec1 .inner .pd1 .out_img {
+    margin:0 auto;
+    width:200px ; height:200px; 
+    background-size: cover;
+}
+#main .sec1 .inner .pd1 .in_img {
+    margin:0 auto;
+    width:200px ; height:200px; 
+    background-size: cover;
+}
+#main .sec1 .inner .pd1 .sid_img {
+    margin:0 auto;
+    width:200px ; height:200px;   
+    background-size: cover;
+}
+
+#main .sec1 .inner .pd1 .pd_txt {padding: 0 15px; text-align: center; word-break: keep-all;}
+#main .sec1 .inner .pd1 .pd_txt > h2 {padding: 15px;}
+
+#main .sec_txt {width: 200px; margin: 150px auto 50px; word-break: keep-all;}
+
+
+
+}
+
+/* 모바일 */
+
+
+
